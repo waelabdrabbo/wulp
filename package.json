@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "gulp-inject": "^5.0.2",
     "gulp-rename": "^1.4.0"
   },
   "devDependencies": {
