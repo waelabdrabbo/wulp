@@ -1,0 +1,32 @@
+// @import "vendor/bootstrap/bootstrap-grid.scss";
+@import 'vendor/silentGrid';
+@import 'abstracts/themeVars';
+header {
+  position: absolute;
+  width: 100%;
+  nav {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    .logo {
+      background-color: $primaryColor;
+      padding: 12px 37px;
+    }
+    ul {
+      // display: flex;
+      list-style: none;
+      margin-left: 5rem;
+      padding: 0;
+      li {
+        display: inline-block;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          font-size: 20px;
+          padding: 10px 35px;
+        }
+      }
+    }
+  }
+}

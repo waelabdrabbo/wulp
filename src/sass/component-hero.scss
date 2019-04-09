@@ -1,0 +1,32 @@
+@import "vendor/silentGrid";
+@import "abstracts/themeVars";
+.hero {
+  background-image: url(/dist/images/Banner@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  h1,
+  p {
+    color: #fff;
+  }
+  .container {
+    @extend %container;
+    .row {
+      @extend %row;
+      .caption {
+        @extend %col-lg-6;
+        padding-left: 2rem;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 12px;
+          left: 0;
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+}
