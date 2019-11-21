@@ -38,7 +38,7 @@ function serve() {
 function styles() {
     return gulp.src(paths.styles.src)
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
+        .pipe(autoprefixer())
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(paths.styles.dest))
